@@ -1,59 +1,127 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
 }
 
 /* navbar  */
-.navbar-brand{
-    font-family: "Clicker Script", cursive  !important;
-    font-size: 2rem;
+.navbar-brand {
+  font-family: "Clicker Script", cursive !important;
+  font-size: 2rem;
 }
-.navbar-nav{
-    display: flex;
-    gap: 2rem;
+.navbar-nav {
+  display: flex;
+  gap: 2rem;
 }
-.nav-link{
-    font-family: "Playfair Display", serif;
-    font-size: medium;
+.nav-link {
+  font-family: "Playfair Display", serif;
+  font-size: medium;
 }
-
 
 /* hero-section  */
-.hero-section{
-    background-image: url("../images/coffee_image.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.hero-section {
+  background-image: url("../images/coffee_image.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  inset: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section .text {
+  text-align: left;
+  max-width: 600px;
+}
+
+.hero-section .text p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .text .coffee-word {
+  font-family: "Clicker Script", cursive !important;
+  font-size: 10rem;
+}
+
+.btn-order {
+  background-color: #f9c06a;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-order:hover {
+  background-color: #f7b347;
+  /* transform: translateY(-3px); */
+  box-shadow: 0 8px 20px rgba(249, 192, 106, 0.35);
+}
+
+/* aboutus-section  */
+.about-section {
+  padding-block: 5rem;
+}
+
+
+
+.about-section .text-content{
+     display: flex;
     align-items: center;
-    color: #fff;
 }
 
-.hero-section .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+.about-section .text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  gap:1.5rem;
 }
 
-.hero-section .text{
-    text-align: left;
-    max-width: 600px;
-    
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #603809;
 }
 
-.hero-section .text p{
-    font-family: "Playfair Display", serif;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.about-section p {
+  color: #707070;
+  font-size: 1.1rem;
+
 }
 
-.hero-section .text .coffee-word{
-    font-family: "Clicker Script", cursive  !important;
-    font-size: 15rem;
+.about-section .img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section .img-container img {
+  width: 100%;
+  height: auto;
 }
