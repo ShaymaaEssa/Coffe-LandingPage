@@ -137,6 +137,13 @@ h2.section-title {
   position: relative;
 }
 
+.coffeesplashreverse-image {
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    z-index: 1;
+}
+
 .menu-section .section-title-content {
   text-align: center;
   margin-bottom: 3rem;
@@ -150,6 +157,11 @@ h2.section-title {
 .item-content{
   border: 1px solid #F9C06A;
   position: relative;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .menu-items .item-content img{
   width: 100%;
@@ -171,6 +183,13 @@ h2.section-title {
   color: #603809;
 }
 
+.item-button{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
 .menu-items .item-button{
   position: absolute;
   bottom: -20px;
@@ -181,7 +200,7 @@ h2.section-title {
 .menu-items .item-button .btn-order{
   background-color: #F9C06A;
   color: #000;
-  padding: 10px 25px;
+  /* padding: 10px 10px; */
   border: none;
   border-radius: 25px;
   font-size: 0.9rem;
@@ -193,4 +212,20 @@ h2.section-title {
 .menu-items .item-button .btn-order:hover {
   background-color: #F7B347;
   box-shadow: 0 8px 20px rgba(249, 192, 106, 0.35);
+}
+
+/* whyus-section  */
+.whyus-section {
+  padding-block: 5rem;
+  position: relative;
+}
+
+.whyus-section .section-title-content {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.whyus-section .section-title-content p {
+  color: #707070;
+  font-size: 1.1rem;
 }
